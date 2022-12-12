@@ -1,10 +1,10 @@
 import "./App.css";
-import Card from "./Components/Card";
 
 function App() {
     return (
         <div className="App">
-            <h1 className="text-3xl font-inter text-deep-orange">Hello world!</h1>
+            {/* <h1 className="text-3xl font-inter text-deep-orange">Hello world!</h1>
+             */}
         </div>
     );
 }

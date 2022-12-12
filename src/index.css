@@ -7,3 +7,15 @@
         @apply font-inter;
     }
 }
+
+@layer components {
+    .colored-bullet li::before {
+        content: "\2022";
+        @apply text-deep-orange font-bold inline-block w-4 h-6 rounded-full ml-2;
+        transition: all 1s ease-in-out;
+    }
+
+    .colored-bullet:hover li::before {
+        @apply text-white;
+    }
+}
