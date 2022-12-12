@@ -1,17 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-
-import Home from './Components/Home'
+import "./App.css";
+import Card from "./Components/Card";
 
 function App() {
-
-
-  return (
-    <div className="App">
-     
-      <Home/>
-    </div>
-  )
+    return (
+        <div className="App">
+            <h1 className="text-3xl font-inter text-deep-orange">Hello world!</h1>
+        </div>
+    );
 }
 
-export default App
+export default App;
