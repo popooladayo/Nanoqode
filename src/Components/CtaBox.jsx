@@ -1,10 +1,10 @@
 import React from "react";
 import { Phone, Message } from "./SVGs";
 
-const CtaBox = () => {
+const CTABox = () => {
     return (
-        <div className="flex items-center justify-around rounded-[18px] p-6 max-w-[848px] shadow-lg shadow-light-blue">
-            <div className="flex gap-10">
+        <div className="items-center justify-around rounded-[18px] p-6 max-w-[848px] shadow-lg shadow-light-blue">
+            <div className="gap-10">
                 <div className="pt-3">
                     <Phone />
                 </div>
@@ -13,8 +13,10 @@ const CtaBox = () => {
                     <p className="text-slate-900 font-medium text-4xl leading-[3rem]">800-361-2961</p>
                 </div>
             </div>
+
             <hr className="h-[89px] w-[.2rem] bg-light-blue" />
-            <div className="flex flex-row-reverse gap-10">
+
+            <div className="flex-row-reverse gap-10">
                 <div className="pt-3">
                     <Message />
                 </div>
@@ -27,4 +29,4 @@ const CtaBox = () => {
     );
 };
 
-export default CtaBox;
+export default CTABox;
