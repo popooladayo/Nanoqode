@@ -12,6 +12,16 @@ module.exports = {
             fontFamily: {
                 inter: ["Inter", "serif", "sans-serif"],
             },
+            keyframes: {
+                moveInRight: {
+                    "0%": { opacity: "0", transform: "translateX(100px)" },
+                    "50%": { transform: "translateX(10px)" },
+                    "100%": { opacity: "1", transform: "translateX(0px)" },
+                },
+            },
+            animation: {
+                "move-in-right": "moveInRight 3s linear",
+            },
         },
     },
     plugins: [],

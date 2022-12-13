@@ -19,3 +19,7 @@
         @apply text-white;
     }
 }
+.end {
+    justify-self: flex-end !important;
+    align-self: flex-end !important;
+}

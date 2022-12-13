@@ -3,26 +3,26 @@ import { Phone, Message } from "./SVGs";
 
 const CTABox = () => {
     return (
-        <div className="items-center justify-around rounded-[18px] p-6 max-w-[848px] shadow-lg shadow-light-blue">
-            <div className="gap-10">
-                <div className="pt-3">
+        <div className="lg:flex items-center justify-around rounded-[18px] p-2 md:p-4 max-w-[848px] shadow-lg shadow-light-blue bg-white">
+            <div className="flex gap-5 sm:gap-10 pl-5">
+                <div>
                     <Phone />
                 </div>
-                <div className="text-xl font-light text-slate-500 text-left leading-10">
+                <div className="text-base lg:text-xl font-light text-slate-500 text-left leading-10">
                     <p>Toll Free Number</p>
-                    <p className="text-slate-900 font-medium text-4xl leading-[3rem]">800-361-2961</p>
+                    <p className="text-slate-900 font-medium text-2xl lg:text-4xl leading-[3rem]">800-361-2961</p>
                 </div>
             </div>
 
-            <hr className="h-[89px] w-[.2rem] bg-light-blue" />
+            <hr className="w-full h-[6px] lg:h-[89px] lg:w-[.3rem] lg:mx-2  bg-light-blue" />
 
-            <div className="flex-row-reverse gap-10">
+            <div className="flex lg:flex-row-reverse gap-5 sm:gap-10 pl-5">
                 <div className="pt-3">
                     <Message />
                 </div>
-                <div className="text-xl font-light text-slate-500 text-left leading-10">
+                <div className="text-base lg:text-xl font-light text-slate-500 text-left leading-10">
                     <p>Get a quote</p>
-                    <p className="text-slate-900 font-medium text-4xl leading-[3rem]">Live Chat With Us</p>
+                    <p className="text-slate-900 font-medium text-2xl lg:text-4xl leading-[3rem]">Live Chat With Us</p>
                 </div>
             </div>
         </div>
