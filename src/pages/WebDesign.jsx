@@ -5,7 +5,7 @@ import Button from "../Components/Button";
 import CTABox from "../Components/CtaBox";
 import Card from "../Components/Card";
 
-import { pillLists } from "../data/staticData";
+import { pillLists, cardData } from "../data/staticData";
 import WebsiteMain from "../assets/images/Webiste-Image.jpg";
 
 const WebDesign = () => {
@@ -43,9 +43,15 @@ const WebDesign = () => {
                     <CTABox />
                 </div>
             </section>
-            <section>
-                <h1>How we Build Awesome Websites!</h1>
-                <div></div>
+            <section className="bg-section-blue flex flex-col justify-center items-center space-y-32 py-20 pb-[15rem] px-10">
+                <h1 className="font-semibold lg:font-bold text-4xl text-center lg:text-5xl text-[#333] mt-[12rem] lg:mt-40">
+                    How we Build Awesome Websites!
+                </h1>
+                <div className="flex gap-20 lg:gap-10 flex-wrap justify-center items-center">
+                    {cardData?.map((card, index) => (
+                        <Card key={index} title={card.title} text={card.text} list={card.list} Icon={card.icon} />
+                    ))}
+                </div>
             </section>
         </main>
     );
