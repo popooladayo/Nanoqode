@@ -1,4 +1,13 @@
-import { PageIcon, PageIcon2, PageIcon3, PageIcon4 } from "../Components/SVGs";
+import {
+    PageIcon,
+    PageIcon2,
+    PageIcon3,
+    PageIcon4,
+    FeatureIcon,
+    FeatureIcon2,
+    FeatureIcon3,
+    FeatureIcon4,
+} from "../Components/SVGs";
 
 export const pillLists = [
     "Ecommerce Shopping Cart",
@@ -42,5 +51,28 @@ export const cardData = [
             "1-Click Markerting Automation",
             "Traffic Conversion Tools",
         ],
+    },
+];
+
+export const featureData = [
+    {
+        icon: FeatureIcon,
+        title: "Track Your ROI",
+        text: "Collect 100+ data points and set goals for conversions. Understand your traffic source and how to convert.",
+    },
+    {
+        icon: FeatureIcon2,
+        title: "Scale your Business",
+        text: "Hassle Free expansion in products or services with our DIY website pages section. Control your growth.",
+    },
+    {
+        icon: FeatureIcon3,
+        title: "Features & Results",
+        text: "Marketing enabled platform to help you create customer databases and stay connected via email & text.",
+    },
+    {
+        icon: FeatureIcon4,
+        title: "Rinse & Repeat",
+        text: "Target local markets, replicate the site on new domains or add multiple sites in minutes. Put your code to use.",
     },
 ];

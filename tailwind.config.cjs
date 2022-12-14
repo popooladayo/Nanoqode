@@ -5,10 +5,12 @@ module.exports = {
         extend: {
             colors: {
                 "deep-orange": "rgba(218, 69, 44, 1)",
+                "light-orange": "rgba(218, 75, 39, 0.12)",
                 "very-light-orange": "rgba(218, 75, 39, 0.12)",
                 "light-blue": "rgba(90, 166, 177, 1)",
                 "very-light-blue": "rgba(235, 244, 246, 1)",
                 "section-blue": "rgba(235, 244, 246, 1)",
+                "light-grey": "rgba(217, 217, 217, 1)",
             },
             fontFamily: {
                 inter: ["Inter", "serif", "sans-serif"],
@@ -22,6 +24,9 @@ module.exports = {
             },
             animation: {
                 "move-in-right": "moveInRight 3s linear",
+            },
+            screens: {
+                "curved-arrow": "1415px",
             },
         },
     },

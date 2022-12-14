@@ -4,9 +4,12 @@ import Pill from "../Components/Pill";
 import Button from "../Components/Button";
 import CTABox from "../Components/CtaBox";
 import Card from "../Components/Card";
+import { CurvedArrow } from "../Components/SVGs";
 
-import { pillLists, cardData } from "../data/staticData";
+import { pillLists, cardData, featureData } from "../data/staticData";
 import WebsiteMain from "../assets/images/Webiste-Image.jpg";
+import featureImage from "../assets/images/Feature-Image.jpg";
+import Feature from "../Components/Feature";
 
 const WebDesign = () => {
     return (
@@ -39,18 +42,54 @@ const WebDesign = () => {
                     </div>
                 </div>
 
-                <div className="w-[80%] lg:w-[60%] xl:w-[50%] mx-auto relative top-[6rem] lg:top-16">
+                <div className="w-[80%] lg:w-[60%] xl:w-[50%] mx-auto relative top-[6rem] lg:top-16 z-10">
                     <CTABox />
                 </div>
             </section>
-            <section className="bg-section-blue flex flex-col justify-center items-center space-y-32 py-20 pb-[15rem] px-10">
+
+            <section className="bg-section-blue flex flex-col justify-center items-center space-y-32 py-20 pb-[15rem] px-10 relative z-10">
+                <span className="hidden lg:block font-bold text-[90px] text-white uppercase drop-shadow-xl absolute top-[4rem] right-[-7.8rem] rotate-[-90deg]">
+                    built
+                </span>
                 <h1 className="font-semibold lg:font-bold text-4xl text-center lg:text-5xl text-[#333] mt-[12rem] lg:mt-40">
                     How we Build Awesome Websites!
                 </h1>
-                <div className="flex gap-20 lg:gap-10 flex-wrap justify-center items-center">
+                <div className="flex gap-[8rem] lg:gap-10 flex-wrap justify-center items-center">
                     {cardData?.map((card, index) => (
-                        <Card key={index} title={card.title} text={card.text} list={card.list} Icon={card.icon} />
+                        <div key={index} className="relative group">
+                            <Card title={card.title} text={card.text} list={card.list} Icon={card.icon} />
+                            <div className="hidden curved-arrow:block ml-20 mt-6 absolute left-[10rem]">
+                                <span className="group-last:hidden">
+                                    <CurvedArrow />
+                                </span>
+                            </div>
+                        </div>
                     ))}
+                </div>
+            </section>
+
+            <section className="">
+                <div className="relative bg-light-orange px-6 lg:p-[8rem] py-16 space-y-10 text-center lg:text-start">
+                    <span className="hidden lg:block font-bold text-[90px] text-white uppercase drop-shadow-2xl absolute top-[-3.2rem] right-8">
+                        creative
+                    </span>
+                    <h1 className="uppercase text-xl font-semibold">What makes us different</h1>
+                    <p className="capitalize text-2xl lg:text-5xl font-bold leading-tight">
+                        We are a creative company that <br /> focuses on establishing long-term <br /> relationships
+                        with customers.
+                        <hr className="lg:w-1/3 w-2/4 mx-auto h-[6px] bg-deep-orange my-4 lg:mx-0" />
+                    </p>
+                </div>
+
+                <div className="flex flex-row-reverse lg:justify-around items-center pb-10">
+                    <div className="hidden lg:block p-3 bg-light-grey rounded-full -mt-40">
+                        <img src={featureImage} alt="feature-image" className="w-[500px] h-[650px] rounded-full object-cover" />
+                    </div>
+                    <div className="flex gap-16 lg:gap-10 flex-col lg:max-w-[40%] sm:max-w-[80%] mx-auto lg:m-0 py-10 lg:px-4">
+                        {featureData?.map((feature, index) => (
+                            <Feature key={index} Icon={feature.icon} title={feature.title} text={feature.text} />
+                        ))}
+                    </div>
                 </div>
             </section>
         </main>
