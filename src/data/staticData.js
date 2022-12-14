@@ -9,6 +9,11 @@ import {
     FeatureIcon4,
 } from "../Components/SVGs";
 
+import PortImage from "../assets/images/portfolio-image.jpg";
+import PortImage2 from "../assets/images/portfolio-image2.jpg";
+import PortImage3 from "../assets/images/portfolio-image3.jpg";
+import PortImage4 from "../assets/images/portfolio-image4.jpg";
+import PortImage5 from "../assets/images/portfolio-image5.jpg";
 export const pillLists = [
     "Ecommerce Shopping Cart",
     "Upto 10 Service Pages",
@@ -74,5 +79,33 @@ export const featureData = [
         icon: FeatureIcon4,
         title: "Rinse & Repeat",
         text: "Target local markets, replicate the site on new domains or add multiple sites in minutes. Put your code to use.",
+    },
+];
+
+export const PortfolioData = [
+    {
+        image: PortImage,
+        title: "Medical Website",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed consectetur malesuada sodales enim viverra odio diam. Nascetur dui elementum, ",
+    },
+    {
+        image: PortImage2,
+        title: "Cryptocurrency Website",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed consectetur malesuada sodales enim viverra odio diam. Nascetur dui elementum, ",
+    },
+    {
+        image: PortImage3,
+        title: "Bitcoin investment Web",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed consectetur malesuada sodales enim viverra odio diam. Nascetur dui elementum, ",
+    },
+    {
+        image: PortImage4,
+        title: "Body builder Web",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed consectetur malesuada sodales enim viverra odio diam. Nascetur dui elementum, ",
+    },
+    {
+        image: PortImage5,
+        title: "Dental Website",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed consectetur malesuada sodales enim viverra odio diam. Nascetur dui elementum, ",
     },
 ];

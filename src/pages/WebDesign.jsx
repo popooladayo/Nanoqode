@@ -4,16 +4,18 @@ import Pill from "../Components/Pill";
 import Button from "../Components/Button";
 import CTABox from "../Components/CtaBox";
 import Card from "../Components/Card";
+import PortfolioCard from "../Components/PortfolioCard";
+
 import { CurvedArrow } from "../Components/SVGs";
 
-import { pillLists, cardData, featureData } from "../data/staticData";
+import { pillLists, cardData, featureData, PortfolioData } from "../data/staticData";
 import WebsiteMain from "../assets/images/Webiste-Image.jpg";
 import featureImage from "../assets/images/Feature-Image.jpg";
 import Feature from "../Components/Feature";
 
 const WebDesign = () => {
     return (
-        <main>
+        <main className="overflow-hidden">
             <section className="space-y-10 relative pt-20">
                 <div className="flex flex-col md:flex-row md:gap-6 items-center lg:justify-center">
                     <div className="space-y-12 text-center lg:ml-auto lg:max-w-[30%]">
@@ -42,7 +44,7 @@ const WebDesign = () => {
                     </div>
                 </div>
 
-                <div className="w-[80%] lg:w-[60%] xl:w-[50%] mx-auto relative top-[6rem] lg:top-16 z-10">
+                <div className="w-[80%] lg:w-[60%] xl:w-[50%] mx-auto relative top-[6rem] lg:top-16 z-20">
                     <CTABox />
                 </div>
             </section>
@@ -77,19 +79,44 @@ const WebDesign = () => {
                     <p className="capitalize text-2xl lg:text-5xl font-bold leading-tight">
                         We are a creative company that <br /> focuses on establishing long-term <br /> relationships
                         with customers.
-                        <hr className="lg:w-1/3 w-2/4 mx-auto h-[6px] bg-deep-orange my-4 lg:mx-0" />
                     </p>
+                    <hr className="lg:w-1/3 w-2/4 mx-auto h-[6px] bg-deep-orange my-4 lg:mx-0" />
                 </div>
 
                 <div className="flex flex-row-reverse lg:justify-around items-center pb-10">
                     <div className="hidden lg:block p-3 bg-light-grey rounded-full -mt-40">
-                        <img src={featureImage} alt="feature-image" className="w-[500px] h-[650px] rounded-full object-cover" />
+                        <img
+                            src={featureImage}
+                            alt="feature-image"
+                            className="w-[500px] h-[650px] rounded-full object-cover"
+                        />
                     </div>
                     <div className="flex gap-16 lg:gap-10 flex-col lg:max-w-[40%] sm:max-w-[80%] mx-auto lg:m-0 py-10 lg:px-4">
                         {featureData?.map((feature, index) => (
                             <Feature key={index} Icon={feature.icon} title={feature.title} text={feature.text} />
                         ))}
                     </div>
+                </div>
+            </section>
+            <section className="flex flex-col justify-center items-center gap-20 bg-very-light-blue py-[8rem] relative">
+                <span className="hidden md:block font-bold text-[90px] text-white uppercase drop-shadow-2xl absolute bottom-[13rem] left-[-17rem] rotate-90">
+                    portfolio
+                </span>
+                <div className="text-center">
+                    <h1 className="text-xl font-semibold capitalize text=[#333] leading-[3]">Portfolio</h1>
+                    <p className="font-bold text-3xl lg:text-5xl py-3 border-b-4 border-deep-orange">
+                        Our Award-Winning Website Portfolio
+                    </p>
+                </div>
+                <div className="md:px-[6rem]">
+                    <div className="flex flex-wrap justify-center lg:justify-start gap-10">
+                        {PortfolioData?.map((port, index) => (
+                            <PortfolioCard key={index} PortImage={port.image} title={port.title} text={port.text} />
+                        ))}
+                    </div>
+                </div>
+                <div>
+                    <Button colour="light-blue">See All Portfolio</Button>
                 </div>
             </section>
         </main>
