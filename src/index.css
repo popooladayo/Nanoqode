@@ -11,3 +11,33 @@
         @apply px-6;
     }
 }
+
+@layer components {
+    .colored-bullet li::before {
+        content: "\2022";
+        @apply text-deep-orange font-bold inline-block w-4 h-6 rounded-full ml-2;
+        transition: all 1s ease-in-out;
+    }
+
+    .colored-bullet:hover li::before {
+        @apply text-white;
+    }
+}
+
+@layer components {
+    .scroll-parent {
+        @apply relative w-screen py-10 lg:py-16 overflow-hidden bg-white flex items-center max-w-[70%] mx-auto rounded-full;
+    }
+
+    .scroll-element {
+        @apply absolute flex items-center justify-around w-full h-full;
+    }
+    .scroll-element img {
+        @apply max-w-[7%];
+    }
+    .bg-image {
+        background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)),
+            url("./assets/images/cta-picture.jpg");
+        background-size: cover;
+    }
+}
