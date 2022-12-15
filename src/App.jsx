@@ -1,10 +1,15 @@
-import "./App.css";
+
 import Card from "./Components/Card";
+import Hero from "./Components/Hero";
+import Navbar from "./Components/Navbar"
+import Navbars from "./Components/Navbars";
 
 function App() {
     return (
         <div className="App">
-            <h1 className="text-3xl font-inter text-deep-orange">Hello world!</h1>
+            <Navbar />
+            <Navbars />
+            <Hero/>
         </div>
     );
 }

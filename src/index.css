@@ -6,4 +6,8 @@
     body {
         @apply font-inter;
     }
+
+    li {
+        @apply px-6;
+    }
 }
