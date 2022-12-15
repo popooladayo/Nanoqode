@@ -5,13 +5,17 @@ import Button from "../Components/Button";
 import CTABox from "../Components/CtaBox";
 import Card from "../Components/Card";
 import PortfolioCard from "../Components/PortfolioCard";
+import Carousel from "../Components/Carousel";
+import ClientCard from "../Components/ClientCard";
 
 import { CurvedArrow } from "../Components/SVGs";
 
-import { pillLists, cardData, featureData, PortfolioData } from "../data/staticData";
+import { pillLists, cardData, featureData, PortfolioData, clientData } from "../data/staticData";
+
 import WebsiteMain from "../assets/images/Webiste-Image.jpg";
 import featureImage from "../assets/images/Feature-Image.jpg";
 import Feature from "../Components/Feature";
+import ReplaceGif from "../assets/images/replace-gif.jpg";
 
 const WebDesign = () => {
     return (
@@ -32,7 +36,7 @@ const WebDesign = () => {
                             ))}
                         </div>
                         <div className="flex flex-col items-center lg:items-start">
-                            <Button colour="deep-orange">book a free consult</Button>
+                            <Button colour="deep-orange">BOOK A FREE CONSULT</Button>
                         </div>
                     </div>
 
@@ -99,7 +103,7 @@ const WebDesign = () => {
                 </div>
             </section>
             <section className="flex flex-col justify-center items-center gap-20 bg-very-light-blue py-[8rem] relative">
-                <span className="hidden md:block font-bold text-[90px] text-white uppercase drop-shadow-2xl absolute bottom-[13rem] left-[-17rem] rotate-90">
+                <span className="hidden md:block font-bold text-[90px] text-white uppercase drop-shadow-2xl absolute bottom-[15rem] left-[-17.5rem] rotate-90">
                     portfolio
                 </span>
                 <div className="text-center">
@@ -119,6 +123,65 @@ const WebDesign = () => {
                     <Button colour="light-blue">See All Portfolio</Button>
                 </div>
             </section>
+            <section className="p-20">
+                <div className="lg:max-w-[80%] m-auto">
+                    <div className="text-center">
+                        <h1 className="font-semibold text-base lg:text-xl uppercase mt-10">our design language</h1>
+                        <p className="font-bold text-3xl lg:text-5xl mt-5 mb-28">A Focus on Design + Fuction</p>
+                    </div>
+                    <div className="flex justify-center items-center lg:p-20">
+                        <div className="hidden xl:block xl:max-w-[40%] p-2 bg-[#9AB8BB]">
+                            <img src={ReplaceGif} alt="gif" className="object-cover" />
+                        </div>
+                        <div className="bg-[#e9e9e9] p-10 font-[400] text-sm lg:text-lg max-w-lg h-fit space-y-6 rounded-md xl:-ml-16 xl:-mt-32">
+                            <p>
+                                Create and maintain inclusive and high-quality content, protecting your brand reputation
+                                and reducing the risk of compliance lawsuits and fines.
+                            </p>
+                            <p>
+                                Identify, prioritize, and implement the most impactful content optimizations so you can
+                                craft truly impactful, and engaging, customer experiences.
+                            </p>
+                            <Button colour="light-blue">BOOK A FREE CONSULT</Button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="flex justify-center items-center flex-col bg-[#FBE9E5] pt-20 pb-40">
+                <div>
+                    <p className="font-bold text-3xl lg:text-5xl mb-20 text-black">Development Languages</p>
+                </div>
+                <div>
+                    <Carousel />
+                </div>
+            </section>
+            <section className="pb-36 pt-20 bg-section-blue">
+                <div className="text-center">
+                    <p className="font-bold text-3xl lg:text-5xl mb-28 text-black capitalize">Why Our Clients ❤️ us</p>
+                </div>
+                <div className="flex flex-wrap justify-around items-center max-w-[85%] mx-auto gap-20">
+                    {clientData?.map(({ name, title }, index) => (
+                        <ClientCard name={name} title={title} key={index} />
+                    ))}
+                </div>
+                <div className="w-fit mx-auto mt-28">
+                    <Button colour="light-blue">More Details</Button>
+                </div>
+            </section>
+            <section className="py-28">
+                <div className="max-w-[75%] mx-auto text-center md:text-left flex flex-wrap justify-center md:justify-between items-center gap-10 bg-image p-20 rounded-md">
+                    <div>
+                        <h1 className="font-bold md:text-[24px] xl:text-[32px] text-white leading-snug">
+                            <span className="border-t-[4px] border-deep-orange pt-3"> Convinced </span> yet? Let's make
+                            something <br /> great together.
+                        </h1>
+                    </div>
+                    <div>
+                        <Button colour="light-blue">SCHEDULE A CALL</Button>
+                    </div>
+                </div>
+            </section>
+            <footer></footer>
         </main>
     );
 };

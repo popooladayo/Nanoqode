@@ -19,7 +19,21 @@
         @apply text-white;
     }
 }
-.end {
-    justify-self: flex-end !important;
-    align-self: flex-end !important;
+
+@layer components {
+    .scroll-parent {
+        @apply relative w-screen py-10 lg:py-16 overflow-hidden bg-white flex items-center max-w-[70%] mx-auto rounded-full;
+    }
+
+    .scroll-element {
+        @apply absolute flex items-center justify-around w-full h-full;
+    }
+    .scroll-element img {
+        @apply max-w-[7%];
+    }
+    .bg-image {
+        background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)),
+            url("./assets/images/cta-picture.jpg");
+        background-size: cover;
+    }
 }

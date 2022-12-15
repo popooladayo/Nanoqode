@@ -109,3 +109,18 @@ export const PortfolioData = [
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed consectetur malesuada sodales enim viverra odio diam. Nascetur dui elementum, ",
     },
 ];
+
+export const clientData = [
+    {
+        name: "Jerome Bell",
+        title: "Marketing Coordinator",
+    },
+    {
+        name: "Cody Fisher",
+        title: "President of sales",
+    },
+    {
+        name: "Robert Fox",
+        title: "Web designer",
+    },
+];
