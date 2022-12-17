@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./Components/Footer";
 import WebDesign from "./pages/WebDesign";
 
 function App() {

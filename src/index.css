@@ -4,7 +4,7 @@
 
 @layer base {
     body {
-        @apply font-inter;
+        @apply font-inter bg-white;
     }
 }
 
@@ -35,5 +35,19 @@
         background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)),
             url("./assets/images/cta-picture.jpg");
         background-size: cover;
+    }
+    .footer {
+        @apply grid-flow-row-dense sm:grid-cols-2 sm:gap-y-20 lg:grid-cols-none;
+    }
+    .footer > * {
+        @apply gap-y-8;
+    }
+    .footer-title {
+        @apply text-white opacity-100;
+    }
+}
+@media screen and (min-width: 70rem) {
+    .footer {
+        grid-auto-flow: column;
     }
 }

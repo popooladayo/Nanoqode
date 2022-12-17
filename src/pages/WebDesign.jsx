@@ -7,6 +7,7 @@ import Card from "../Components/Card";
 import PortfolioCard from "../Components/PortfolioCard";
 import Carousel from "../Components/Carousel";
 import ClientCard from "../Components/ClientCard";
+import Footer from "../Components/Footer";
 
 import { CurvedArrow } from "../Components/SVGs";
 
@@ -113,7 +114,7 @@ const WebDesign = () => {
                     </p>
                 </div>
                 <div className="md:px-[6rem]">
-                    <div className="flex flex-wrap justify-center lg:justify-start gap-10">
+                    <div className="flex flex-wrap justify-center gap-10">
                         {PortfolioData?.map((port, index) => (
                             <PortfolioCard key={index} PortImage={port.image} title={port.title} text={port.text} />
                         ))}
@@ -159,7 +160,7 @@ const WebDesign = () => {
                 <div className="text-center">
                     <p className="font-bold text-3xl lg:text-5xl mb-28 text-black capitalize">Why Our Clients ❤️ us</p>
                 </div>
-                <div className="flex flex-wrap justify-around items-center max-w-[85%] mx-auto gap-20">
+                <div className="flex flex-wrap justify-around items-center max-w-[85%] mx-auto gap-20 md:gap-10">
                     {clientData?.map(({ name, title }, index) => (
                         <ClientCard name={name} title={title} key={index} />
                     ))}
@@ -181,7 +182,9 @@ const WebDesign = () => {
                     </div>
                 </div>
             </section>
-            <footer></footer>
+            <div>
+                <Footer />
+            </div>
         </main>
     );
 };
