@@ -17,7 +17,7 @@ import { BsVimeo } from 'react-icons/bs'
 
 function Navbar() {
   return (
-    <div className='hidden md:bg-[#DA452C] items-center md:flex p-8 text-white px-10 '>
+    <div className='hidden bg-[#DA452C] items-center lg:flex p-8 text-white px-10  '>
       
 <div className='flex   w-full justify-between '>
       
@@ -34,7 +34,7 @@ function Navbar() {
         
         
             
-        <span className='items-center flex ml-3'>888 sargent ave Winnipeg, Manitoba, R3E 0C7, Canada </span>
+        <span className='items-center flex ml-3 '>888 sargent ave Winnipeg, Manitoba, R3E 0C7, Canada </span>
         </div>
         
         <div className='flex items-center '>
