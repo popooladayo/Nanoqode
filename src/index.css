@@ -41,3 +41,8 @@
         background-size: cover;
     }
 }
+
+@font-face {
+    font-family: Inter-Bold;
+    src: url('./assets/images/fonts/Inter-Bold.ttf');
+  }
