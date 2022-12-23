@@ -6,6 +6,10 @@
     body {
         @apply font-inter bg-white;
     }
+
+    li {
+        @apply px-6;
+    }
 }
 
 @layer components {
@@ -51,3 +55,8 @@
         grid-auto-flow: column;
     }
 }
+
+@font-face {
+    font-family: Inter-Bold;
+    src: url('./assets/images/fonts/Inter-Bold.ttf');
+  }

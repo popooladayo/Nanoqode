@@ -8,6 +8,12 @@ import {
     FeatureIcon3,
     FeatureIcon4,
 } from "../Components/SVGs";
+import {
+    host,
+     market,
+     tele,
+     web
+     } from '../assets/images'
 
 import PortImage from "../assets/images/portfolio-image.jpg";
 import PortImage2 from "../assets/images/portfolio-image2.jpg";
@@ -124,3 +130,22 @@ export const clientData = [
         title: "Web designer",
     },
 ];
+
+export const Services = [
+    {
+       image: web,
+       text: "Web Design"
+    },
+    {
+        image: market,
+        text: "Marketing"
+     },
+     {
+        image: tele,
+        text: "Telephony"
+     },
+     {
+        image: host,
+        text: "Hosting"
+     },
+]
