@@ -69,7 +69,9 @@ const Footer = () => {
                                 placeholder="username@site.com"
                                 className="input bg-white py-8 input-bordered w-full pr-16"
                             />
-                            <button className="btn btn-lg capitalize bg-deep-orange mt-8 text-white">Subscribe</button>
+                            <button className="btn border-none btn-lg capitalize bg-deep-orange mt-8 text-white">
+                                Subscribe
+                            </button>
                         </div>
                     </div>
                 </div>

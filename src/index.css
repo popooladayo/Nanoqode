@@ -49,7 +49,11 @@
     .footer-title {
         @apply text-white opacity-100;
     }
+    .menu-horizontal li {
+        @apply lg:px-0 2xl:px-2;
+    }
 }
+
 @media screen and (min-width: 70rem) {
     .footer {
         grid-auto-flow: column;
@@ -58,5 +62,5 @@
 
 @font-face {
     font-family: Inter-Bold;
-    src: url('./assets/images/fonts/Inter-Bold.ttf');
-  }
+    src: url("./assets/images/fonts/Inter-Bold.ttf");
+}
