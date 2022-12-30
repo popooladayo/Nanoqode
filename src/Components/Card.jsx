@@ -1,10 +1,9 @@
 import React from "react";
-import { PageIcon } from "./SVGs";
 
 const Card = ({ Icon, title, text, list }) => {
     return (
-        <div className="h-[330px] w-[310px] bg-white shadow-sm shadow-light-blue rounded-md flex items-center relative group hover:scale-[1.05] hover:-translate-y-6 hover:bg-deep-orange transition duration-700 ease-in-out cursor-pointer">
-            <div className="absolute top-[-2.9rem] left-3 bg-[#5AA6B1] p-4 rounded-full">
+        <div className="max-w-[350px] bg-white shadow-sm shadow-light-blue rounded-md flex items-center relative group hover:scale-[1.05] hover:-translate-y-6 hover:bg-deep-orange transition duration-700 ease-in-out cursor-pointer">
+            <div className="absolute top-[-2.5rem] left-[1rem] bg-[#5AA6B1] p-4 rounded-full">
                 <Icon />
             </div>
             <div className="text-left p-10 group-hover:text-white">

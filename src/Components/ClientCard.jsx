@@ -4,7 +4,7 @@ import { Stars } from "./SVGs";
 
 const ClientCard = ({ name, title }) => {
     return (
-        <div className="bg-white max-w-lg p-6 text-left space-y-6 drop-shadow-lg rounded-lg relative">
+        <div className="bg-white max-w-md p-6 text-left space-y-6 drop-shadow-lg rounded-lg relative">
             <Stars />
             <p className="font-normal text-sm md:text-[14px] text-slate-600 leading-6">
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
@@ -15,7 +15,7 @@ const ClientCard = ({ name, title }) => {
                 <p className="font-light text-sm">{title}</p>
             </div>
             <div>
-                <FcGoogle className="w-20 h-20 absolute right-2 bottom-2" />
+                <FcGoogle className="w-16 h-16 absolute right-2 bottom-2" />
             </div>
         </div>
     );

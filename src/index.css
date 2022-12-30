@@ -2,9 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
     body {
+        scrollbar-width: thin;
+        scrollbar-color: #90a4ae;
         @apply font-inter bg-white;
+    }
+body::-webkit-scrollbar {
+    width: 11px
+}
+body::-webkit-scrollbar-track {
+    background: #cfd8dc;
+}
+body::-webkit-scrollbar-thumb {
+background-color: #90a4ae;
+border-radius: 6px;
+border: 3px solid #cfd8dc;
+}
+    li {
+        @apply px-6;
     }
 }
 
@@ -45,9 +62,18 @@
     .footer-title {
         @apply text-white opacity-100;
     }
+    .menu-horizontal li {
+        @apply lg:px-0 2xl:px-2;
+    }
 }
+
 @media screen and (min-width: 70rem) {
     .footer {
         grid-auto-flow: column;
     }
+}
+
+@font-face {
+    font-family: Inter-Bold;
+    src: url("./assets/images/fonts/Inter-Bold.ttf");
 }

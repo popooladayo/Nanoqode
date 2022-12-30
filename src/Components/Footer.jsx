@@ -7,12 +7,12 @@ import { BsInstagram } from "react-icons/bs";
 const Footer = () => {
     return (
         <footer className="bg-[#5AA6B1] text-white text-xl leading-[1.5] pt-10">
-            <div className="footer text-white text-xl leading-[1.5] px-10 md:px-6 lg:px-10">
+            <div className="footer text-white text-xl leading-[1.5] px-4 md:px-6 lg:px-10">
                 <div>
                     <span className="footer-title">
                         <img src={NanoqodeLogo} alt="Nanoqode Logo" />
                     </span>
-                    <span className="max-w-[20rem] lg:max-w-[30rem]">
+                    <span className="max-w-[20rem] lg:max-w-[25rem]">
                         <p>
                             Nanoqode services are designed to meet modern digital business needs. From getting your
                             company up-to-specs on security, deploying custom solutions, managing you marketing strategy
@@ -67,9 +67,11 @@ const Footer = () => {
                             <input
                                 type="text"
                                 placeholder="username@site.com"
-                                className="input bg-white py-8 input-bordered w-full pr-16"
+                                className="input bg-white py-8 input-bordered w-[80%] lg:w-full pr-16"
                             />
-                            <button className="btn btn-lg capitalize bg-deep-orange mt-8 text-white">Subscribe</button>
+                            <button className="btn border-none capitalize bg-deep-orange mt-8 text-white">
+                                Subscribe
+                            </button>
                         </div>
                     </div>
                 </div>
