@@ -102,7 +102,7 @@ const WebDesign = () => {
                             <img
                                 src={featureImage}
                                 alt="feature-image"
-                                className="w-[450px] h-[700px] rounded-full object-cover"
+                                className="w-[450px] h-[600px] rounded-full object-cover"
                             />
                         </div>
                         <div className="flex gap-16 lg:gap-10 flex-col lg:max-w-[40%] sm:max-w-[80%] mx-auto lg:m-0 py-10 lg:px-4">
@@ -122,7 +122,7 @@ const WebDesign = () => {
                             Our Award-Winning Website Portfolio
                         </p>
                     </div>
-                    <div className="md:px-[6rem]">
+                    <div className="md:px-[6rem] max-w-[90%]">
                         <div className="flex flex-wrap justify-center gap-10 px-10 sm:px-0">
                             {PortfolioData?.map((port, index) => (
                                 <PortfolioCard key={index} PortImage={port.image} title={port.title} text={port.text} />
@@ -137,11 +137,13 @@ const WebDesign = () => {
                     <div className="lg:max-w-[80%] m-auto">
                         <div className="text-center">
                             <h1 className="font-semibold text-base lg:text-xl uppercase mt-10">our design language</h1>
-                            <p className="font-bold text-3xl lg:text-5xl mt-5 mb-10 lg:mb-28">A Focus on Design + Fuction</p>
+                            <p className="font-bold text-3xl lg:text-5xl mt-5 mb-10 lg:mb-28">
+                                A Focus on Design + Fuction
+                            </p>
                         </div>
                         <div className="flex justify-center items-center p-4 lg:p-20">
-                            <div className="hidden xl:block w-[80rem] p-2 rounded bg-[#9AB8BB]">
-                                <img src={ReplaceGif} alt="gif" className="object-cover" />
+                            <div className="hidden xl:block p-2 rounded bg-[#9AB8BB]">
+                                <img src={ReplaceGif} alt="gif" className="w-[30rem] h-[25rem] object-cover" />
                             </div>
                             <div className="bg-[#e9e9e9] p-4 lg:p-10 font-[400] text-sm lg:text-lg h-fit space-y-6 rounded-md max-w-md xl:-ml-16 xl:-mt-40">
                                 <p>
