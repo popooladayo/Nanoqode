@@ -3,7 +3,7 @@ import { ArrowRight } from "./SVGs";
 
 const PortfolioCard = ({ PortImage, title, text }) => {
     return (
-        <div className=" bg-white max-w-[25rem] p-4 rounded-md drop-shadow-xl ring-1 space-y-10">
+        <div className=" bg-white max-w-[22rem] p-4 rounded-md drop-shadow-xl ring-1 space-y-6">
             <div className="px-2">
                 <img src={PortImage} alt="Portfolio Image" />
             </div>

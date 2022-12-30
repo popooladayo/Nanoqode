@@ -2,11 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
     body {
+        scrollbar-width: thin;
+        scrollbar-color: #90a4ae;
         @apply font-inter bg-white;
     }
-
+body::-webkit-scrollbar {
+    width: 11px
+}
+body::-webkit-scrollbar-track {
+    background: #cfd8dc;
+}
+body::-webkit-scrollbar-thumb {
+background-color: #90a4ae;
+border-radius: 6px;
+border: 3px solid #cfd8dc;
+}
     li {
         @apply px-6;
     }

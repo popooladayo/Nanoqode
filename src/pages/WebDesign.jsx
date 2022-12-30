@@ -38,13 +38,13 @@ const WebDesign = () => {
                             <p className="font-sm lg:font-normal text-xl xl:text-3xl">
                                 Stand out and generate more leads. <br /> Custom Websites Starting at $999*
                             </p>
-                            <div className="space-y-6">
+                            <div className="space-y-6 px-4 sm:px-0">
                                 {pillLists.map((pill, index) => (
                                     <Pill text={pill} key={index} />
                                 ))}
                             </div>
                             <div className="flex flex-col items-center lg:items-start">
-                                <Button colour="deep-orange">BOOK A FREE CONSULT</Button>
+                                <Button colour="deep-orange">Book a free Consult</Button>
                             </div>
                         </div>
 
@@ -68,7 +68,7 @@ const WebDesign = () => {
                     <h1 className="font-semibold lg:font-bold text-4xl text-center lg:text-5xl text-[#333] mt-[12rem] lg:mt-40">
                         How we Build Awesome Websites!
                     </h1>
-                    <div className="flex gap-[8rem] lg:gap-10 flex-wrap justify-center items-center">
+                    <div className="flex gap-[8rem] lg:gap-12 flex-wrap justify-center items-center">
                         {cardData?.map((card, index) => (
                             <div key={index} className="relative group">
                                 <Card title={card.title} text={card.text} list={card.list} Icon={card.icon} />
@@ -98,11 +98,11 @@ const WebDesign = () => {
                     </div>
 
                     <div className="flex flex-row-reverse lg:justify-around items-center pb-10">
-                        <div className="hidden lg:block p-3 bg-light-grey rounded-full -mt-40">
+                        <div className="hidden lg:block p-3 bg-light-grey rounded-full -mt-20">
                             <img
                                 src={featureImage}
                                 alt="feature-image"
-                                className="w-[500px] h-[650px] rounded-full object-cover"
+                                className="w-[450px] h-[700px] rounded-full object-cover"
                             />
                         </div>
                         <div className="flex gap-16 lg:gap-10 flex-col lg:max-w-[40%] sm:max-w-[80%] mx-auto lg:m-0 py-10 lg:px-4">
@@ -118,12 +118,12 @@ const WebDesign = () => {
                     </span>
                     <div className="text-center">
                         <h1 className="text-xl font-semibold capitalize text=[#333] leading-[3]">Portfolio</h1>
-                        <p className="font-bold text-3xl lg:text-5xl py-3 border-b-4 border-deep-orange">
+                        <p className="font-bold text-3xl lg:text-5xl py-3 md:border-b-4 border-deep-orange ">
                             Our Award-Winning Website Portfolio
                         </p>
                     </div>
                     <div className="md:px-[6rem]">
-                        <div className="flex flex-wrap justify-center gap-10">
+                        <div className="flex flex-wrap justify-center gap-10 px-10 sm:px-0">
                             {PortfolioData?.map((port, index) => (
                                 <PortfolioCard key={index} PortImage={port.image} title={port.title} text={port.text} />
                             ))}
@@ -133,17 +133,17 @@ const WebDesign = () => {
                         <Button colour="light-blue">See All Portfolio</Button>
                     </div>
                 </section>
-                <section className="p-20">
+                <section className="py-20">
                     <div className="lg:max-w-[80%] m-auto">
                         <div className="text-center">
                             <h1 className="font-semibold text-base lg:text-xl uppercase mt-10">our design language</h1>
-                            <p className="font-bold text-3xl lg:text-5xl mt-5 mb-28">A Focus on Design + Fuction</p>
+                            <p className="font-bold text-3xl lg:text-5xl mt-5 mb-10 lg:mb-28">A Focus on Design + Fuction</p>
                         </div>
-                        <div className="flex justify-center items-center lg:p-20">
-                            <div className="hidden xl:block xl:max-w-[40%] p-2 bg-[#9AB8BB]">
+                        <div className="flex justify-center items-center p-4 lg:p-20">
+                            <div className="hidden xl:block w-[80rem] p-2 rounded bg-[#9AB8BB]">
                                 <img src={ReplaceGif} alt="gif" className="object-cover" />
                             </div>
-                            <div className="bg-[#e9e9e9] p-10 font-[400] text-sm lg:text-lg max-w-lg h-fit space-y-6 rounded-md xl:-ml-16 xl:-mt-32">
+                            <div className="bg-[#e9e9e9] p-4 lg:p-10 font-[400] text-sm lg:text-lg h-fit space-y-6 rounded-md max-w-md xl:-ml-16 xl:-mt-40">
                                 <p>
                                     Create and maintain inclusive and high-quality content, protecting your brand
                                     reputation and reducing the risk of compliance lawsuits and fines.
@@ -152,7 +152,7 @@ const WebDesign = () => {
                                     Identify, prioritize, and implement the most impactful content optimizations so you
                                     can craft truly impactful, and engaging, customer experiences.
                                 </p>
-                                <Button colour="light-blue">BOOK A FREE CONSULT</Button>
+                                <Button colour="light-blue">Book a free consult</Button>
                             </div>
                         </div>
                     </div>
@@ -171,7 +171,7 @@ const WebDesign = () => {
                             Why Our Clients ❤️ us
                         </p>
                     </div>
-                    <div className="flex flex-wrap justify-around items-center max-w-[85%] mx-auto gap-20 md:gap-10">
+                    <div className="flex flex-col lg:flex-row justify-around items-center max-w-[85%] mx-auto gap-20 md:gap-10">
                         {clientData?.map(({ name, title }, index) => (
                             <ClientCard name={name} title={title} key={index} />
                         ))}
@@ -181,7 +181,7 @@ const WebDesign = () => {
                     </div>
                 </section>
                 <section className="py-28">
-                    <div className="max-w-[90%] lg:max-w-[75%] mx-auto text-center md:text-left flex flex-wrap justify-center md:justify-between items-center gap-10 bg-image p-20 rounded-md">
+                    <div className="max-w-[90%] lg:max-w-[75%] mx-auto md:text-left flex flex-wrap justify-center md:justify-between items-center gap-10 bg-image p-20 rounded-md">
                         <div>
                             <h1 className="font-bold md:text-[24px] xl:text-[32px] text-white leading-snug">
                                 <span className="border-t-[4px] border-deep-orange pt-3"> Convinced </span> yet? Let's

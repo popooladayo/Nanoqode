@@ -61,7 +61,7 @@ const Navbar = () => {
                             <li>
                                 <a>Home</a>
                             </li>
-                            <li tabIndex={0}>
+                            <li tabIndex={1}>
                                 <a>
                                     Website
                                     <svg
@@ -83,7 +83,7 @@ const Navbar = () => {
                                     </li>
                                 </ul>
                             </li>
-                            <li tabIndex={0}>
+                            <li tabIndex={2}>
                                 <a>
                                     Marketing
                                     <svg
